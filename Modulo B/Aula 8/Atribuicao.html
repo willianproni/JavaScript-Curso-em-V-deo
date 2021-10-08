@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atribuição</title>
+</head>
+<body>
+  
+  <h1>Atribuição Simples</h1>
+
+  <p>
+    var a = Numero digitado <br>
+    var b = a % 5 <br>
+    var c = 5 * b ** 2 <br>
+    var d = 10 - a / 2 <br>
+    var e = 6 * 2 / d <br>
+   var f = b % e + 4 / e 
+  </p>
+
+  <script>
+    var a = Number.parseInt(prompt("Digite a ser feito na Atribuição Simples:"))
+    var b = a % 5
+    var c = 5 * b ** 2
+    var d = 10 - a / 2
+    var e = 6 * 2 / d
+    var f = b % e + 4 / e
+
+    document.write(`1- Valor digitado é: ${a}<br/>
+      2- O resto da divisão de ${a} por 8: ${b}<br/>
+      3- O ${b} potencializado por 2 dividido por 5: ${c}<br/>
+      4- O Valor digitado ${a} dividido por 2 menos 10: ${d}<br/>
+      5- O valor ${d} dividido por 2 multiplicado por 6: ${e}<br/>
+      6- 4 dividido por ${e} mais o resto da divisão de ${b} com ${e}: ${f}`)
+
+  </script>
+
+  <h1>Auto-Atribuição</h1>
+
+  <p>
+    var n = 3 <br>
+    var n = n + 4 <br>
+    var n = n - 5 <br>
+    var n = n * 4 <br>
+    var n = n / 2 <br>
+    var n = n ** 2<br>
+    n = n % 5
+  </p>
+
+  <script>
+    var n = 3
+    var n = n + 4
+    var n = n - 5 
+    var n = n * 4
+    var n = n / 2
+    var n = n ** 2
+    var n = n % 5
+    document.write(`O o valor de N é ${n}`)
+  </script>
+
+  <h1>Incrementação</h1>
+
+  <script>
+    var x = 10
+    var y = 11
+    x++
+    y--
+    document.write(`+ = ${x} <br/>
+                    - = ${y} `)
+
+  </script>
+
+</body>
+</html>
