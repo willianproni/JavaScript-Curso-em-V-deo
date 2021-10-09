@@ -28,11 +28,12 @@
     var nota2 = Number.parseFloat(prompt('Digite a nota 2: '))
 
     var media = nota1 + nota2 / 2
+    var resultado = media >= 7 ? 'aprovado' : 'reprovado'
 
-    if (media >= 7)
-      document.write(`Média ${media}, aluno aprovado`)
+    if (resultado = 'aprovado')
+      document.write(`Média ${media}, aluno ${resultado}`)
     else
-      document.write(`Média ${media} luno Reprovado`)
+      document.write(`Média ${media} aluno ${resultado}`)
 
   </script>
 
