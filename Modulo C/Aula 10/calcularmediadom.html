@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Dom</title>
+  <style>
+
+    h1.title{
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+  
+  <h1 class='title'>Média do Aluno Usando DOM</h1>
+
+  <p>Digite a primeiro nota:</p>
+  <input type="number" name="nota1" id="tn1"> 
+  <p>Digite a segunda nota:</p>
+  <input type="number" name="nota2" id="tn2"> 
+  <button onclick="media()" >Calcular</button>
+
+  <div id='resultado'>Resultado...</div>
+
+  <script>
+
+    function media() {
+    var n1 = document.getElementById('tn1')
+    var n2 = document.getElementById('tn2')
+    var r = document.getElementById('resultado')
+    var nota1 = Number(n1.value)
+    var nota2 = Number(n2.value)
+    var media = (nota1 + nota2) / 2
+    
+    
+
+    if (media >= 7)
+    r.innerText = `Aluno Aprovado Média = ${media}`
+    else
+    r.innerText = `Aluno Reprovado Média = ${media}`
+
+    }
+   
+    
+
+
+  </script>
+
+</body>
+</html>
