@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posso Votar?</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" ></script>
+</head>
+<body>
+  
+  <header>
+      <h1>Saiba se já pode votar</h1>
+  </header>
+
+  <section>
+      <div id='txname'>
+      <p>
+        Informe seu nome:
+        <input type="text" name="nome" id="nome">
+      </p>
+      <p> 
+        Data de Nascimento:
+        <input type="number" name="nasc" id="nasc">
+      </p>
+      <p>
+      Informe seu sexo:
+        <input type="radio" name="chsexo" id="masc" checked>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="chsexo" id="fem">
+        <label for="fem">Feminino</label>
+      </p>
+      <p>
+      <input type="button" value="Verificar" onclick="verificar()">
+      </p>
+      </div>
+      <div id='res'>
+        Resultado...
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; willianproni</p>
+  </footer>
+
+</body>
+</html>

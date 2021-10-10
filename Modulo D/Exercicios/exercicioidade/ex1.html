@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horas do Dia</title>
+ <link rel="stylesheet" href="estilo.css">  <!-- Coloca o styles em um arquivo externo -->
+  <script src="script.js" ></script>  <!-- Coloca o script(Javascript) em um arquivo externo -->
+</head>
+<body>
+  
+   <header> <!-- Defino o titulo da página -->
+      <h1>Verificador de Idade</h1>
+  </header>
+
+  <section>
+    <div id='info'>
+      <p>
+        Ano de Nascimento: <input type="number" name="anonasc" id="anonasc">
+      </p>
+      <p>
+        Sexo: <input type="radio" name="radsexo" id="masc" checked>
+                <label for="masc">Masculino</label>
+              <input type="radio" name="radsexo" id="fem">
+                <label for="fem">Feminino</label>
+      </p>
+
+      <button onclick="verificar()">Verificar</button>
+  </div>
+  
+  <div id='resul'>
+    Preencha os dados acima para ver o resultado!
+  </div>
+  </section>
+
+  <footer> <!-- Rodapé da página -->
+    <p>&copy; CursoemVideo</p>
+  </footer>
+
+</body>
+</html>
