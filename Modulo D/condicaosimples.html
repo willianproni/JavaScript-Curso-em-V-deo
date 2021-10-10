@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condições Simples</title>
+</head>
+<body>
+  
+  <h1>Treino de Concições Simples</h1>
+
+  <h2>Sistema de Multas</h2>
+  Velocidade do carro <input type="number" name="km" id="km"> KM/h
+  <button onclick="calcular()">Verificar</button>
+  <div id='res'></div>
+
+  <script>
+
+    function calcular() {
+      var v = document.getElementById('km')
+      var res = document.getElementById('res')
+      var vel = Number(v.value)
+
+      if (vel < 70){
+        res.innerHTML = (`Sua velocidade é de ${vel}, dirija com segurança`)
+      } else {
+        res.innerHTML = (`Sua velocidade é de ${vel}, MULTADO`)
+      }
+    }
+
+  </script>
+
+</body>
+</html>

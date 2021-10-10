@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex Condição Simples</title>
+</head>
+<body>
+  
+  <h1>Ex Estrangeiro</h1>
+
+  <p>Digite sua nacionalidade:</p> 
+  <!-- <input type="text" name="nacio" id="nacio"> -->
+  <select id="naci">
+    <option value="Brasileiro">Brasileiro</option>
+    <option value="Françês">Françês</option>
+  </select>
+
+  <button onclick="cadastrar()">Cadastrar</button>
+
+  <div id='cad'></div>
+
+  <script>
+
+    function cadastrar() {
+    // var n = document.getElementById('nacio')
+    // var nacionalidade = String(n.value)
+    var n = document.getElementById('naci')
+    var nacionalidade = String(n.value)
+    var res = document.querySelector('div#cad')
+
+    console.log(nacionalidade)
+
+    if(nacionalidade === "Brasileiro")
+      res.innerHTML = `Brasileiro`
+    else
+      res.innerHTML = 'Estrangeiro'
+
+    }
+
+
+  </script>
+
+</body>
+</html>
