@@ -20,7 +20,9 @@
   <h1>Iniciciando estudos com DOM</h1>
   <p>Aqui vai o resultado</p> 
   <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p> 
+  <section>
   <div id='msg'>Clique em mim</div>
+  </section>
   <script>
 
     var corpo = document.body
@@ -38,7 +40,7 @@
     // var d = window.document.getElementsByName('msg')[0]
     // d.innerText = 'olá!'
 
-    var d = window.document.querySelector('div#msg')
+    var d = document.querySelector('div#msg')
     d.style.color = 'red'
 
   </script>
