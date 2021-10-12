@@ -10,7 +10,7 @@ var tabuada = document.getElementById('seltab')
   for(var tab = 1; tab <= 10; tab++){
     let item = document.createElement('option')
     item.text = `${numero} x ${tab} = ${numero*tab}`
-    item.value = `tab${c}`
+    item.value = `tab${tab}`
     tabuada.appendChild(item)
   }
 }
